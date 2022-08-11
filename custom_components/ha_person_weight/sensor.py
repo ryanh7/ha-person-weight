@@ -71,7 +71,7 @@ class WeightSensor(RestoreSensor):
 
         value = new_state.state
         try:
-            if int(value) >= self._min and int(value) <= self._max:
+            if float(value) >= self._min and float(value) <= self._max:
                 self._state = value
                 self.async_write_ha_state()
         except Exception as err:
