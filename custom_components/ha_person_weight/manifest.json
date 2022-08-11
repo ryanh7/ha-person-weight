@@ -1,0 +1,10 @@
+{
+  "domain": "ha_person_weight",
+  "name": "Person Weight",
+  "documentation": "https://github.com/ryanh7/ha-person-weight",
+  "requirements": [],
+  "codeowners": ["@ryanh7"],
+  "config_flow": true,
+  "iot_class": "local_polling",
+  "version": "0.1.0"
+}

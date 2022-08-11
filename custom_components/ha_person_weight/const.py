@@ -1,0 +1,1 @@
+DOMAIN = "ha_person_weight"

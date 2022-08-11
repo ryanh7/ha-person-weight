@@ -1,0 +1,28 @@
+{
+    "config": {
+        "step": {
+            "user": {
+                "data": {
+                    "name": "姓名",
+                    "minimum": "最小值",
+                    "maximum": "最大值",
+                    "sensors": "体重秤sensor id，多个id以英文逗号分隔"
+                },
+                "title": "配置"
+            }
+        }
+    },
+    "options": {
+        "step": {
+            "init": {
+                "data": {
+                    "name": "姓名",
+                    "minimum": "最小值",
+                    "maximum": "最大值",
+                    "sensors": "体重秤entity id，多个id以英文逗号分隔"
+                },
+                "title": "配置"
+            }
+        }
+    }
+}
