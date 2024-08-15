@@ -13,7 +13,7 @@ from homeassistant.const import (
     CONF_MINIMUM,
     CONF_MAXIMUM,
     CONF_SENSORS,
-    MASS_KILOGRAMS,
+    UnitOfMass,
     STATE_UNAVAILABLE,
     STATE_UNKNOWN,
     ATTR_UNIT_OF_MEASUREMENT
@@ -66,7 +66,7 @@ class WeightSensor(RestoreSensor):
 
         if self._unit_of_measurement is None:
             unit = new_state.attributes.get(ATTR_UNIT_OF_MEASUREMENT)
-            self._unit_of_measurement = MASS_KILOGRAMS if unit is None else unit
+            self._unit_of_measurement = UnitOfMass.MASS_KILOGRAMS if unit is None else unit
             self._attr_state_class = SensorStateClass.MEASUREMENT
 
         value = new_state.state
